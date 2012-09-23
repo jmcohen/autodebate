@@ -1,0 +1,48 @@
+<html>
+<head>
+<!DOCTYPE HTML> 
+<title>Autodebate: Obama vs. Rommey</title>
+<link rel="stylesheet" type="text/css" href="static/bootstrap/css/bootstrap.css">
+<style type="text/css">
+  body {background-color: black; margin-top: 15px;}
+  #topic {height: 40px; font-size: 30px;}
+  .quote {color: white; font-size:20px; line-height: 20px; font-family: Georgia; margin-top: 10px;}
+  h1 {color: red; font-size: 35px; font-weight: normal}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="row"> <!-- Headshots row -->
+<div class="span4">
+<img src="static/obama.png" class="img-rounded">
+</div>
+<div class="span4">
+<h1>And the topic is&mdash;</h1>
+<br />
+<input id="topic" type="text" class="input-large"/>
+<br />
+<button id="discuss" class="btn btn-primary btn-large">Discuss!</button>
+</div>
+<div class="span4">
+<img src="static/romney.png" class="img-rounded">
+</div>
+</div> <!-- End headshots row -->
+
+<div class="row"> <!-- Quotes row -->
+<div class="span4">
+<p class="quote" id="obama"></p>
+</div>
+<div class="span4 offset4">
+<p class="quote" id="romney"></p>
+</div>
+</div> <!-- End quotes row -->
+
+</div>
+
+</body>
+
+</html>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script type="text/javascript" src="static/main.js"></script>
