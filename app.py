@@ -4,8 +4,8 @@ from flask import request
 from flask import url_for, render_template, make_response
 from autodebate import Corpus
 
-obama = Corpus('obama.txt')
-romney = Corpus('romney.txt')
+obama = Corpus('data/obama.txt')
+romney = Corpus('data/romney.txt')
 
 app = Flask(__name__)
 """

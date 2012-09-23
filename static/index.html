@@ -7,22 +7,31 @@
   body {background-color: black; margin-top: 15px;}
   #topic {height: 40px; font-size: 30px;}
   .quote {color: white; font-size:20px; line-height: 20px; font-family: Georgia; margin-top: 10px;}
-  h1 {color: red; font-size: 35px; font-weight: normal}
+  h1 {color: white; font-size: 35px; font-weight: normal;}
+  h2 {color: white; font-size: 15px; font-weight: normal; text-align:center;}
 </style>
 </head>
 <body>
 <div class="container">
+
+<div class="row">
+<h2>Can't watch the presidential debates? Take a spin as moderator and see what the candidates will say.</h2>
+</div>
 
 <div class="row"> <!-- Headshots row -->
 <div class="span4">
 <img src="static/obama.png" class="img-rounded">
 </div>
 <div class="span4">
-<h1>And the topic is&mdash;</h1>
-<br />
-<input id="topic" type="text" class="input-large"/>
-<br />
-<button id="discuss" class="btn btn-primary btn-large">Discuss!</button>
+<div class="row-fluid">
+<h1>And the topic is...</h1>
+</div>
+<div class="row-fluid">
+<input id="topic" type="text" class="input-large span12"/>
+</div>
+<div class="row-fluid">
+<button id="discuss" class="btn span12 btn-primary btn-large" type="button">Discuss!</button>
+</div>
 </div>
 <div class="span4">
 <img src="static/romney.png" class="img-rounded">
