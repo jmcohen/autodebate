@@ -21,10 +21,13 @@ class Corpus(object):
             else:
                 self.triples[key] = [next]
                 
-    def generate(self, seed, numSentences=5):
+    def generate(self, seedPhrase, numSentences=5):
         sentenceCount = 0
-        (a, b) = random.choice([key for key in self.triples.keys() if key[0] == seed]) 
-        generatedText = [a, b]
+        seed = seedPhrase.split()[-1]
+        print seedPhrase
+        print seed
+        (a, b) = random.choice([key for key in self.triples.keys() if unicode(key[0]) == unicode(seed)]) 
+        generatedText = [seedPhrase]
         while sentenceCount < 5:
             options = self.triples[(a, b)]
             a, b = b, random.choice(options)
